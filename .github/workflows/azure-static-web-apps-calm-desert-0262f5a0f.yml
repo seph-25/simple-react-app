@@ -20,6 +20,8 @@ jobs:
         with:
           submodules: true
           lfs: false
+      - name: Install dependencies
+        run: npm ci
       - name: Build app
         run: npm run build
         env:
